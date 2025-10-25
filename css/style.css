@@ -1,0 +1,28 @@
+* {box-sizing:border-box; margin:0; padding:0;}
+body {font-family:'Roboto',sans-serif; background:#121212; color:#fff;}
+header {display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem; background:#1f1f1f;}
+header h1 {color:#00bcd4;}
+nav a {color:#fff; margin-left:1rem; text-decoration:none; font-weight:500;}
+nav a:hover {color:#00bcd4;}
+main {padding:2rem; max-width:1200px; margin:auto;}
+.search-bar {margin-bottom:2rem; text-align:center;}
+.search-bar input {width:80%; padding:0.5rem 1rem; border-radius:5px; border:none; font-size:1rem;}
+section {margin-bottom:2rem;}
+section h2 {margin-bottom:1rem;}
+.carousel {display:flex; overflow-x:auto; gap:1rem;}
+.carousel::-webkit-scrollbar {display:none;}
+.video-card {min-width:200px; background:#1f1f1f; border-radius:10px; cursor:pointer; transition:transform 0.2s; flex-shrink:0; position:relative;}
+.video-card:hover {transform:scale(1.05);}
+.video-card img {width:100%; border-radius:10px;}
+.video-card h3 {padding:0.5rem; font-size:1rem; text-align:center;}
+.player-overlay {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); justify-content:center; align-items:center; z-index:1000; flex-direction:column;}
+.player-overlay video {max-width:90%; max-height:80%; border-radius:10px; margin-bottom:1rem;}
+.player-overlay button {background:#ff4444; border:none; color:#fff; padding:0.5rem 1rem; border-radius:5px; font-weight:bold; cursor:pointer;}
+.modal {display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); justify-content:center; align-items:center; z-index:2000;}
+.modal-content {background:#1f1f1f; padding:2rem; border-radius:10px; width:300px; text-align:center;}
+.modal-content h2 {margin-bottom:1rem;}
+.modal-content input {width:100%; padding:0.5rem; margin-bottom:1rem; border-radius:5px; border:none;}
+.modal-content button {background:#00bcd4; border:none; color:#fff; padding:0.5rem 1rem; border-radius:5px; font-weight:bold; cursor:pointer;}
+.modal-content button:hover {background:#0097a7;}
+.user-panel {display:none; margin-top:2rem; background:#1f1f1f; padding:1rem; border-radius:10px;}
+footer {text-align:center; padding:1rem; background:#1f1f1f; margin-top:2rem; font-size:0.9rem;}
