@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlayStreaming-Pro - Inicio</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>PlayStreaming-Pro</h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="series.html">Series</a>
+        <a href="peliculas.html">Películas</a>
+        <a href="perfil.html" onclick="openLogin(event)">Perfil</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+</header>
+
+<main>
+<div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Buscar contenido..." onkeyup="filterVideos()">
+</div>
+
+<!-- Carrusel Acción -->
+<section>
+    <h2>Acción</h2>
+    <div class="carousel" id="accionCarousel">
+        <div class="video-card" data-category="Acción" data-video="https://sample-videos.com/video123/mp4/480/asdasdas.mp4">
+            <img src="https://dummyimage.com/300x170/00bcd4/fff&text=Acción+1" alt="Acción 1">
+            <h3>Acción 1</h3>
+        </div>
+        <div class="video-card" data-category="Acción" data-video="https://sample-videos.com/video123/mp4/480/asdasdas.mp4">
+            <img src="https://dummyimage.com/300x170/00bcd4/fff&text=Acción+2" alt="Acción 2">
+            <h3>Acción 2</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Carrusel Comedia -->
+<section>
+    <h2>Comedia</h2>
+    <div class="carousel" id="comediaCarousel">
+        <div class="video-card" data-category="Comedia" data-video="https://sample-videos.com/video123/mp4/480/asdasdas.mp4">
+            <img src="https://dummyimage.com/300x170/ff5722/fff&text=Comedia+1" alt="Comedia 1">
+            <h3>Comedia 1</h3>
+        </div>
+        <div class="video-card" data-category="Comedia" data-video="https://sample-videos.com/video123/mp4/480/asdasdas.mp4">
+            <img src="https://dummyimage.com/300x170/ff5722/fff&text=Comedia+2" alt="Comedia 2">
+            <h3>Comedia 2</h3>
+        </div>
+    </div>
+</section>
+
+<!-- Carrusel Animación -->
+<section>
+    <h2>Animación</h2>
+    <div class="carousel" id="animacionCarousel">
+        <div class="video-card" data-category="Animación" data-video="videos/bigbuckbunny.mp4">
+            <img src="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217" alt="Big Buck Bunny">
+            <h3>Big Buck Bunny</h3>
+        </div>
+        <div class="video-card" data-category="Animación" data-video="videos/bigbuckbunny.mp4">
+            <img src="https://peach.blender.org/wp-content/uploads/bbb-splash.png" alt="Big Buck Bunny 2">
+            <h3>Big Buck Bunny 2</h3>
+        </div>
+    </div>
+</section>
+
+<div class="user-panel" id="userPanel">
+    <h3>Bienvenido, Usuario!</h3>
+    <p>Todo contenido es legal y libre de derechos.</p>
+</div>
+</main>
+
+<!-- REPRODUCTOR -->
+<div class="player-overlay" id="playerOverlay">
+    <video controls id="playerVideo"></video>
+    <button onclick="closePlayer()">Cerrar</button>
+</div>
+
+<!-- MODAL LOGIN -->
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+        <button onclick="login()">Entrar</button>
+    </div>
+</div>
+
+<footer>
+&copy; 2025 PlayStreaming-Pro. Todo contenido legal y libre de derechos.
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
